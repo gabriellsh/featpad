@@ -7,6 +7,7 @@ import Header from './Header';
 // Code-splitting is automated for routes
 import Home from '../routes/Home';
 import Profile from '../routes/profile';
+import OauthApp from '../routes/oauthApp';
 
 export default function App() {
 	return (
@@ -15,6 +16,7 @@ export default function App() {
 			<Router>
 				<Home path="/" />
 				<Profile path="/profile/" user="me" />
+				<OauthApp path="/oauth-app/" user="me" />
 				<Profile path="/profile/:user" />
 			</Router>
 		</Box>

@@ -6,11 +6,13 @@
   "scripts": {
     "build": "preact build",
     "serve": "sirv build --cors --single",
-    "dev": "preact watch",
+    "dev": "preact watch --port 3000",
     "lint": "eslint src",
     "test": "jest",
-    "server": "node-env-run server --exec nodemon | pino-colada"
+    "server": "node-env-run server --exec nodemon",
+    "devBoth": "run-p server dev"
   },
+  "proxy": "http://localhost:3001",
   "eslintConfig": {
     "extends": "preact",
     "ignorePatterns": [
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",
