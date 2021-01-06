@@ -35,7 +35,7 @@
     "@rocket.chat/fuselage-hooks": "^0.13.1",
     "@rocket.chat/fuselage-polyfills": "^0.13.1",
     "@rocket.chat/icons": "^0.13.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "preact": "^10.3.2",
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1"
